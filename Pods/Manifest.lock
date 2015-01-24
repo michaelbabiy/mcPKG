@@ -1,0 +1,54 @@
+PODS:
+  - AFNetworking (2.0.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.0.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.0.3):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.0.3)
+  - AFNetworking/Security (2.0.3)
+  - AFNetworking/Serialization (2.0.3)
+  - AFNetworking/UIKit (2.0.3):
+    - AFNetworking/NSURLConnection
+  - APAutocompleteTextField (1.0.0)
+  - FontAwesome+iOS (0.1.1)
+  - LDProgressView (1.2)
+  - MagicalRecord (2.2)
+  - MCSwipeTableViewCell (2.0.0)
+  - PPiAwesomeButton (1.2.9):
+    - FontAwesome+iOS
+  - PPiFlatSegmentedControl (1.3.3):
+    - PPiAwesomeButton
+  - UIColor-Crayola (1.0)
+  - YLMoment (0.3.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0.3)
+  - APAutocompleteTextField
+  - LDProgressView (~> 1.2)
+  - MagicalRecord (~> 2.2)
+  - MCSwipeTableViewCell (~> 2.0.0)
+  - PPiFlatSegmentedControl (~> 1.3.3)
+  - UIColor-Crayola (~> 1.0)
+  - YLMoment (~> 0.3.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
+  APAutocompleteTextField: e89077ca3179de6917ab00b43007de7a76e04526
+  FontAwesome+iOS: 243c5309e90d5788909b0f859f75ecff4a20f88f
+  LDProgressView: 26b07fcf00eb066b90f273590955fe8fe27812bd
+  MagicalRecord: b1fc46c99a9749fe7fe7e6f43a89b62ef5201933
+  MCSwipeTableViewCell: b80c32bc0cc9f678aaa6bc39c848c454d65f2c02
+  PPiAwesomeButton: 8d8bc4cf62d8c848e433a1f405e019deee2821dc
+  PPiFlatSegmentedControl: 32d42c7f50cd2db1c40ee17a94d78da6f69d9813
+  UIColor-Crayola: 20eacda0777fd487efba6831e2b34625e8ce3ceb
+  YLMoment: 49f62116a9092cc0ff432e91ab30fd626ee938aa
+
+COCOAPODS: 0.29.0

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B3116" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MCDeveloper" representedClassName="MCDeveloper" syncable="YES">
+        <attribute name="accountNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="developerID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maccitiKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitterHandle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MCPackageID" representedClassName="MCPackageID" syncable="YES">
+        <attribute name="packageID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MCSubmission" representedClassName="MCSubmission" syncable="YES">
+        <attribute name="authorCountry" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorFullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorPayPal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorTwitterHandle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cydiaAccountNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cydiaDevID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isNewDeveloper" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="maccitiKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="packageChangeLog" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="packageCompatibility" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="packageDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="packageDownloadURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="packageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="packagePrice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="packageVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="screenshotDownloadURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submissionDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="submissionFlag" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="submissionFormID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submissionID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submissionIP" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submissionNew" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="submissionStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="submissionUpdateDate" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="MCUsage" representedClassName="MCUsage" syncable="YES">
+        <attribute name="submissionsCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usageData" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MCDeveloper" positionX="-2" positionY="81" width="128" height="133"/>
+        <element name="MCPackageID" positionX="360" positionY="81" width="128" height="58"/>
+        <element name="MCSubmission" positionX="153" positionY="81" width="180" height="433"/>
+        <element name="MCUsage" positionX="360" positionY="162" width="128" height="73"/>
+    </elements>
+</model>

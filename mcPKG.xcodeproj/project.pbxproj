@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CA3CBF8199A6AC100DAB812 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA3CBF7199A6AC100DAB812 /* Parse.framework */; };
+		1CA3CBFA199A6B4200DAB812 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA3CBF9199A6B4200DAB812 /* FacebookSDK.framework */; };
+		23863336E9D840B49FB37715 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DE555072A5409BA11D02F9 /* libPods.a */; };
+		4809772A189A3213003D26D3 /* MCSubmissionAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 48097729189A3213003D26D3 /* MCSubmissionAction.m */; };
+		480DE3B0189C82CA00B911CE /* MCMacCitiKeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480DE3AF189C82CA00B911CE /* MCMacCitiKeyViewController.m */; };
+		480DE3B3189C86BC00B911CE /* MCRandomPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 480DE3B2189C86BC00B911CE /* MCRandomPassword.m */; };
+		480DE3F2189CAAAD00B911CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DE3F1189CAAAD00B911CE /* AudioToolbox.framework */; };
+		480DE3F8189CAB3600B911CE /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DE3F7189CAB3600B911CE /* libz.1.1.3.dylib */; };
+		480DE3FA189CAB4800B911CE /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DE3F9189CAB4800B911CE /* libsqlite3.0.dylib */; };
+		480DE3FF189CADA800B911CE /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DE3FE189CADA800B911CE /* FacebookSDK.framework */; };
+		480DE401189CADCB00B911CE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DE400189CADCB00B911CE /* CoreLocation.framework */; };
+		480DE403189CADFB00B911CE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DE402189CADFB00B911CE /* StoreKit.framework */; };
+		480DE406189CCA3F00B911CE /* MCParseConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 480DE405189CCA3F00B911CE /* MCParseConstants.m */; };
+		480DE409189CCF3900B911CE /* MCDevelopersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 480DE408189CCF3900B911CE /* MCDevelopersViewController.m */; };
+		480DE40F189CD43600B911CE /* MCDeveloper+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 480DE40E189CD43600B911CE /* MCDeveloper+Create.m */; };
+		480DE411189CE49E00B911CE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480DE410189CE49E00B911CE /* MessageUI.framework */; };
+		4827A458189B751D0034D630 /* MCScreenshotPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4827A457189B751D0034D630 /* MCScreenshotPreviewViewController.m */; };
+		485A3C25189B8833002E1B43 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 485A3C1B189B8833002E1B43 /* ioapi.c */; };
+		485A3C26189B8833002E1B43 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 485A3C1D189B8833002E1B43 /* mztools.c */; };
+		485A3C27189B8833002E1B43 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 485A3C1F189B8833002E1B43 /* unzip.c */; };
+		485A3C28189B8833002E1B43 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 485A3C21189B8833002E1B43 /* zip.c */; };
+		485A3C29189B8833002E1B43 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 485A3C24189B8833002E1B43 /* SSZipArchive.m */; };
+		48701B9E18979CBC003C4DA2 /* MCPackageID.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701B9518979CBC003C4DA2 /* MCPackageID.m */; };
+		48701B9F18979CBC003C4DA2 /* MCPackageID+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701B9718979CBC003C4DA2 /* MCPackageID+Create.m */; };
+		48701BA018979CBC003C4DA2 /* mcPKG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48701B9818979CBC003C4DA2 /* mcPKG.xcdatamodeld */; };
+		48701BA118979CBC003C4DA2 /* MCSubmission.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701B9B18979CBC003C4DA2 /* MCSubmission.m */; };
+		48701BA218979CBC003C4DA2 /* MCSubmission+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701B9D18979CBC003C4DA2 /* MCSubmission+Create.m */; };
+		48701BA618979D32003C4DA2 /* MCSubmissionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701BA518979D32003C4DA2 /* MCSubmissionCell.m */; };
+		48701BAB18979D6C003C4DA2 /* MCRawControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701BA818979D6C003C4DA2 /* MCRawControl.m */; };
+		48701BAC18979D6C003C4DA2 /* MCRawControlValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701BAA18979D6C003C4DA2 /* MCRawControlValidator.m */; };
+		48701BB01897A06C003C4DA2 /* MCWebAPi.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701BAF1897A06C003C4DA2 /* MCWebAPi.m */; };
+		48701BB418985E1E003C4DA2 /* MCFetchedResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701BB318985E1E003C4DA2 /* MCFetchedResultsController.m */; };
+		48701BB718986696003C4DA2 /* MCSwipeCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48701BB618986696003C4DA2 /* MCSwipeCellViewController.m */; };
+		4874AF681899D74B00B860C1 /* MCOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4874AF671899D74B00B860C1 /* MCOptionsViewController.m */; };
+		4874AF6B1899DDE900B860C1 /* MCCompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4874AF6A1899DDE900B860C1 /* MCCompletedViewController.m */; };
+		4884DB66189F5854007BE7EB /* MCUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4884DB65189F5854007BE7EB /* MCUsage.m */; };
+		4884DB69189F58C8007BE7EB /* MCUsage+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 4884DB68189F58C8007BE7EB /* MCUsage+Create.m */; };
+		4884DB6D189F7D96007BE7EB /* BZGFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4884DB6C189F7D96007BE7EB /* BZGFormField.m */; };
+		4884DB70189F80C0007BE7EB /* MCDeveloper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4884DB6F189F80C0007BE7EB /* MCDeveloper.m */; };
+		4884DB7418A05A3E007BE7EB /* CTCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4884DB7318A05A3E007BE7EB /* CTCheckbox.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		48AE723418987D18009A7F4F /* MCDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48AE723318987D18009A7F4F /* MCDescriptionViewController.m */; };
+		48D4B3D91898908C0040F469 /* MCDependencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D4B3D81898908C0040F469 /* MCDependencyViewController.m */; };
+		48D4B3DC189894590040F469 /* MCSaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D4B3DB189894590040F469 /* MCSaveViewController.m */; };
+		48D4B3DF189896630040F469 /* MCControlFileGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D4B3DE189896630040F469 /* MCControlFileGenerator.m */; };
+		48FE739C18978DFE00639BDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE739B18978DFE00639BDC /* Foundation.framework */; };
+		48FE739E18978DFE00639BDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE739D18978DFE00639BDC /* CoreGraphics.framework */; };
+		48FE73A018978DFE00639BDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE739F18978DFE00639BDC /* UIKit.framework */; };
+		48FE73A618978DFE00639BDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48FE73A418978DFE00639BDC /* InfoPlist.strings */; };
+		48FE73A818978DFE00639BDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE73A718978DFE00639BDC /* main.m */; };
+		48FE73AC18978DFE00639BDC /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE73AB18978DFE00639BDC /* MCAppDelegate.m */; };
+		48FE73AE18978DFE00639BDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FE73AD18978DFE00639BDC /* Images.xcassets */; };
+		48FE73B518978DFE00639BDC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE73B418978DFE00639BDC /* XCTest.framework */; };
+		48FE73B618978DFE00639BDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE739B18978DFE00639BDC /* Foundation.framework */; };
+		48FE73B718978DFE00639BDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FE739F18978DFE00639BDC /* UIKit.framework */; };
+		48FE73BF18978DFE00639BDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 48FE73BD18978DFE00639BDC /* InfoPlist.strings */; };
+		48FE73C118978DFE00639BDC /* mcPKGTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE73C018978DFE00639BDC /* mcPKGTests.m */; };
+		48FE73CE18978E3300639BDC /* RMMultipleViewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE73CC18978E3300639BDC /* RMMultipleViewsController.m */; };
+		48FE73CF18978E3300639BDC /* RMMultipleViewsController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48FE73CD18978E3300639BDC /* RMMultipleViewsController.xcassets */; };
+		48FE73D118978E6A00639BDC /* iPhone568.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48FE73D018978E6A00639BDC /* iPhone568.storyboard */; };
+		48FE73D418978EED00639BDC /* MCSegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE73D318978EED00639BDC /* MCSegmentedViewController.m */; };
+		48FE73D718978F7200639BDC /* MCFreeSubmissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE73D618978F7200639BDC /* MCFreeSubmissionViewController.m */; };
+		48FE73DA18978F8600639BDC /* MCPaidSubmissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE73D918978F8600639BDC /* MCPaidSubmissionViewController.m */; };
+		48FE73DD18978F9700639BDC /* MCUpdateSubmissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48FE73DC18978F9700639BDC /* MCUpdateSubmissionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48FE73B818978DFE00639BDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48FE739018978DFE00639BDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48FE739718978DFE00639BDC;
+			remoteInfo = mcPKG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CA3CBF7199A6AC100DAB812 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		1CA3CBF9199A6B4200DAB812 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		1CB7B7637E5E4401A2FF40D7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		48097728189A3213003D26D3 /* MCSubmissionAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSubmissionAction.h; sourceTree = "<group>"; };
+		48097729189A3213003D26D3 /* MCSubmissionAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSubmissionAction.m; sourceTree = "<group>"; };
+		480DE3AE189C82CA00B911CE /* MCMacCitiKeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMacCitiKeyViewController.h; sourceTree = "<group>"; };
+		480DE3AF189C82CA00B911CE /* MCMacCitiKeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMacCitiKeyViewController.m; sourceTree = "<group>"; };
+		480DE3B1189C86BC00B911CE /* MCRandomPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRandomPassword.h; sourceTree = "<group>"; };
+		480DE3B2189C86BC00B911CE /* MCRandomPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRandomPassword.m; sourceTree = "<group>"; };
+		480DE3F1189CAAAD00B911CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		480DE3F3189CAABD00B911CE /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		480DE3F5189CAAF800B911CE /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		480DE3F7189CAB3600B911CE /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		480DE3F9189CAB4800B911CE /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		480DE3FE189CADA800B911CE /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		480DE400189CADCB00B911CE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		480DE402189CADFB00B911CE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		480DE404189CCA3F00B911CE /* MCParseConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCParseConstants.h; sourceTree = "<group>"; };
+		480DE405189CCA3F00B911CE /* MCParseConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCParseConstants.m; sourceTree = "<group>"; };
+		480DE407189CCF3900B911CE /* MCDevelopersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDevelopersViewController.h; sourceTree = "<group>"; };
+		480DE408189CCF3900B911CE /* MCDevelopersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDevelopersViewController.m; sourceTree = "<group>"; };
+		480DE40D189CD43600B911CE /* MCDeveloper+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCDeveloper+Create.h"; sourceTree = "<group>"; };
+		480DE40E189CD43600B911CE /* MCDeveloper+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MCDeveloper+Create.m"; sourceTree = "<group>"; };
+		480DE410189CE49E00B911CE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4827A456189B751D0034D630 /* MCScreenshotPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCScreenshotPreviewViewController.h; sourceTree = "<group>"; };
+		4827A457189B751D0034D630 /* MCScreenshotPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCScreenshotPreviewViewController.m; sourceTree = "<group>"; };
+		485A3C1A189B8833002E1B43 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		485A3C1B189B8833002E1B43 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		485A3C1C189B8833002E1B43 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		485A3C1D189B8833002E1B43 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		485A3C1E189B8833002E1B43 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		485A3C1F189B8833002E1B43 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		485A3C20189B8833002E1B43 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		485A3C21189B8833002E1B43 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		485A3C22189B8833002E1B43 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		485A3C23189B8833002E1B43 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		485A3C24189B8833002E1B43 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		485A3C2A189B885D002E1B43 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		48701B9418979CBC003C4DA2 /* MCPackageID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPackageID.h; sourceTree = "<group>"; };
+		48701B9518979CBC003C4DA2 /* MCPackageID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPackageID.m; sourceTree = "<group>"; };
+		48701B9618979CBC003C4DA2 /* MCPackageID+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCPackageID+Create.h"; sourceTree = "<group>"; };
+		48701B9718979CBC003C4DA2 /* MCPackageID+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MCPackageID+Create.m"; sourceTree = "<group>"; };
+		48701B9918979CBC003C4DA2 /* mcPKG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mcPKG.xcdatamodel; sourceTree = "<group>"; };
+		48701B9A18979CBC003C4DA2 /* MCSubmission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSubmission.h; sourceTree = "<group>"; };
+		48701B9B18979CBC003C4DA2 /* MCSubmission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSubmission.m; sourceTree = "<group>"; };
+		48701B9C18979CBC003C4DA2 /* MCSubmission+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCSubmission+Create.h"; sourceTree = "<group>"; };
+		48701B9D18979CBC003C4DA2 /* MCSubmission+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MCSubmission+Create.m"; sourceTree = "<group>"; };
+		48701BA418979D32003C4DA2 /* MCSubmissionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSubmissionCell.h; sourceTree = "<group>"; };
+		48701BA518979D32003C4DA2 /* MCSubmissionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSubmissionCell.m; sourceTree = "<group>"; };
+		48701BA718979D6C003C4DA2 /* MCRawControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRawControl.h; sourceTree = "<group>"; };
+		48701BA818979D6C003C4DA2 /* MCRawControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRawControl.m; sourceTree = "<group>"; };
+		48701BA918979D6C003C4DA2 /* MCRawControlValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRawControlValidator.h; sourceTree = "<group>"; };
+		48701BAA18979D6C003C4DA2 /* MCRawControlValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRawControlValidator.m; sourceTree = "<group>"; };
+		48701BAE1897A06C003C4DA2 /* MCWebAPi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCWebAPi.h; sourceTree = "<group>"; };
+		48701BAF1897A06C003C4DA2 /* MCWebAPi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCWebAPi.m; sourceTree = "<group>"; };
+		48701BB218985E1E003C4DA2 /* MCFetchedResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFetchedResultsController.h; sourceTree = "<group>"; };
+		48701BB318985E1E003C4DA2 /* MCFetchedResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFetchedResultsController.m; sourceTree = "<group>"; };
+		48701BB518986696003C4DA2 /* MCSwipeCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSwipeCellViewController.h; sourceTree = "<group>"; };
+		48701BB618986696003C4DA2 /* MCSwipeCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSwipeCellViewController.m; sourceTree = "<group>"; };
+		4874AF661899D74B00B860C1 /* MCOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOptionsViewController.h; sourceTree = "<group>"; };
+		4874AF671899D74B00B860C1 /* MCOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCOptionsViewController.m; sourceTree = "<group>"; };
+		4874AF691899DDE900B860C1 /* MCCompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCompletedViewController.h; sourceTree = "<group>"; };
+		4874AF6A1899DDE900B860C1 /* MCCompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCompletedViewController.m; sourceTree = "<group>"; };
+		4884DB64189F5854007BE7EB /* MCUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUsage.h; sourceTree = "<group>"; };
+		4884DB65189F5854007BE7EB /* MCUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUsage.m; sourceTree = "<group>"; };
+		4884DB67189F58C8007BE7EB /* MCUsage+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCUsage+Create.h"; sourceTree = "<group>"; };
+		4884DB68189F58C8007BE7EB /* MCUsage+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MCUsage+Create.m"; sourceTree = "<group>"; };
+		4884DB6B189F7D96007BE7EB /* BZGFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZGFormField.h; sourceTree = "<group>"; };
+		4884DB6C189F7D96007BE7EB /* BZGFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZGFormField.m; sourceTree = "<group>"; };
+		4884DB6E189F80C0007BE7EB /* MCDeveloper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDeveloper.h; sourceTree = "<group>"; };
+		4884DB6F189F80C0007BE7EB /* MCDeveloper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDeveloper.m; sourceTree = "<group>"; };
+		4884DB7218A05A3E007BE7EB /* CTCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCheckbox.h; sourceTree = "<group>"; };
+		4884DB7318A05A3E007BE7EB /* CTCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCheckbox.m; sourceTree = "<group>"; };
+		48AE723218987D18009A7F4F /* MCDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDescriptionViewController.h; sourceTree = "<group>"; };
+		48AE723318987D18009A7F4F /* MCDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDescriptionViewController.m; sourceTree = "<group>"; };
+		48D4B3D71898908C0040F469 /* MCDependencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDependencyViewController.h; sourceTree = "<group>"; };
+		48D4B3D81898908C0040F469 /* MCDependencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDependencyViewController.m; sourceTree = "<group>"; };
+		48D4B3DA189894590040F469 /* MCSaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSaveViewController.h; sourceTree = "<group>"; };
+		48D4B3DB189894590040F469 /* MCSaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSaveViewController.m; sourceTree = "<group>"; };
+		48D4B3DD189896630040F469 /* MCControlFileGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCControlFileGenerator.h; sourceTree = "<group>"; };
+		48D4B3DE189896630040F469 /* MCControlFileGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCControlFileGenerator.m; sourceTree = "<group>"; };
+		48FE739818978DFE00639BDC /* mcPKG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mcPKG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48FE739B18978DFE00639BDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48FE739D18978DFE00639BDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		48FE739F18978DFE00639BDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		48FE73A318978DFE00639BDC /* mcPKG-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mcPKG-Info.plist"; sourceTree = "<group>"; };
+		48FE73A518978DFE00639BDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48FE73A718978DFE00639BDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48FE73A918978DFE00639BDC /* mcPKG-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mcPKG-Prefix.pch"; sourceTree = "<group>"; };
+		48FE73AA18978DFE00639BDC /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		48FE73AB18978DFE00639BDC /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		48FE73AD18978DFE00639BDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		48FE73B318978DFE00639BDC /* mcPKGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mcPKGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48FE73B418978DFE00639BDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		48FE73BC18978DFE00639BDC /* mcPKGTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mcPKGTests-Info.plist"; sourceTree = "<group>"; };
+		48FE73BE18978DFE00639BDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		48FE73C018978DFE00639BDC /* mcPKGTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mcPKGTests.m; sourceTree = "<group>"; };
+		48FE73CB18978E3300639BDC /* RMMultipleViewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMultipleViewsController.h; sourceTree = "<group>"; };
+		48FE73CC18978E3300639BDC /* RMMultipleViewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMultipleViewsController.m; sourceTree = "<group>"; };
+		48FE73CD18978E3300639BDC /* RMMultipleViewsController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = RMMultipleViewsController.xcassets; sourceTree = "<group>"; };
+		48FE73D018978E6A00639BDC /* iPhone568.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone568.storyboard; sourceTree = "<group>"; };
+		48FE73D218978EED00639BDC /* MCSegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSegmentedViewController.h; sourceTree = "<group>"; };
+		48FE73D318978EED00639BDC /* MCSegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSegmentedViewController.m; sourceTree = "<group>"; };
+		48FE73D518978F7200639BDC /* MCFreeSubmissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCFreeSubmissionViewController.h; sourceTree = "<group>"; };
+		48FE73D618978F7200639BDC /* MCFreeSubmissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCFreeSubmissionViewController.m; sourceTree = "<group>"; };
+		48FE73D818978F8600639BDC /* MCPaidSubmissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPaidSubmissionViewController.h; sourceTree = "<group>"; };
+		48FE73D918978F8600639BDC /* MCPaidSubmissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPaidSubmissionViewController.m; sourceTree = "<group>"; };
+		48FE73DB18978F9700639BDC /* MCUpdateSubmissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUpdateSubmissionViewController.h; sourceTree = "<group>"; };
+		48FE73DC18978F9700639BDC /* MCUpdateSubmissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUpdateSubmissionViewController.m; sourceTree = "<group>"; };
+		B6DE555072A5409BA11D02F9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48FE739518978DFE00639BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480DE411189CE49E00B911CE /* MessageUI.framework in Frameworks */,
+				480DE403189CADFB00B911CE /* StoreKit.framework in Frameworks */,
+				480DE401189CADCB00B911CE /* CoreLocation.framework in Frameworks */,
+				480DE3FF189CADA800B911CE /* FacebookSDK.framework in Frameworks */,
+				480DE3FA189CAB4800B911CE /* libsqlite3.0.dylib in Frameworks */,
+				480DE3F8189CAB3600B911CE /* libz.1.1.3.dylib in Frameworks */,
+				480DE3F2189CAAAD00B911CE /* AudioToolbox.framework in Frameworks */,
+				48FE739E18978DFE00639BDC /* CoreGraphics.framework in Frameworks */,
+				1CA3CBFA199A6B4200DAB812 /* FacebookSDK.framework in Frameworks */,
+				48FE73A018978DFE00639BDC /* UIKit.framework in Frameworks */,
+				48FE739C18978DFE00639BDC /* Foundation.framework in Frameworks */,
+				1CA3CBF8199A6AC100DAB812 /* Parse.framework in Frameworks */,
+				23863336E9D840B49FB37715 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48FE73B018978DFE00639BDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48FE73B518978DFE00639BDC /* XCTest.framework in Frameworks */,
+				48FE73B718978DFE00639BDC /* UIKit.framework in Frameworks */,
+				48FE73B618978DFE00639BDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		485A3C18189B8833002E1B43 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				485A3C19189B8833002E1B43 /* minizip */,
+				485A3C23189B8833002E1B43 /* SSZipArchive.h */,
+				485A3C24189B8833002E1B43 /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		485A3C19189B8833002E1B43 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				485A3C1A189B8833002E1B43 /* crypt.h */,
+				485A3C1B189B8833002E1B43 /* ioapi.c */,
+				485A3C1C189B8833002E1B43 /* ioapi.h */,
+				485A3C1D189B8833002E1B43 /* mztools.c */,
+				485A3C1E189B8833002E1B43 /* mztools.h */,
+				485A3C1F189B8833002E1B43 /* unzip.c */,
+				485A3C20189B8833002E1B43 /* unzip.h */,
+				485A3C21189B8833002E1B43 /* zip.c */,
+				485A3C22189B8833002E1B43 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		48701BA318979CC3003C4DA2 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				48701B9818979CBC003C4DA2 /* mcPKG.xcdatamodeld */,
+				4884DB6E189F80C0007BE7EB /* MCDeveloper.h */,
+				4884DB6F189F80C0007BE7EB /* MCDeveloper.m */,
+				480DE40D189CD43600B911CE /* MCDeveloper+Create.h */,
+				480DE40E189CD43600B911CE /* MCDeveloper+Create.m */,
+				48701B9418979CBC003C4DA2 /* MCPackageID.h */,
+				48701B9518979CBC003C4DA2 /* MCPackageID.m */,
+				48701B9618979CBC003C4DA2 /* MCPackageID+Create.h */,
+				48701B9718979CBC003C4DA2 /* MCPackageID+Create.m */,
+				48701B9A18979CBC003C4DA2 /* MCSubmission.h */,
+				48701B9B18979CBC003C4DA2 /* MCSubmission.m */,
+				48701B9C18979CBC003C4DA2 /* MCSubmission+Create.h */,
+				48701B9D18979CBC003C4DA2 /* MCSubmission+Create.m */,
+				4884DB64189F5854007BE7EB /* MCUsage.h */,
+				4884DB65189F5854007BE7EB /* MCUsage.m */,
+				4884DB67189F58C8007BE7EB /* MCUsage+Create.h */,
+				4884DB68189F58C8007BE7EB /* MCUsage+Create.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		48701BAD18979FCA003C4DA2 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				48FE73AA18978DFE00639BDC /* MCAppDelegate.h */,
+				48FE73AB18978DFE00639BDC /* MCAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		48701BB11897A071003C4DA2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				48701BAE1897A06C003C4DA2 /* MCWebAPi.h */,
+				48701BAF1897A06C003C4DA2 /* MCWebAPi.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		4874AF641899B7E700B860C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48D4B3DD189896630040F469 /* MCControlFileGenerator.h */,
+				48D4B3DE189896630040F469 /* MCControlFileGenerator.m */,
+				480DE404189CCA3F00B911CE /* MCParseConstants.h */,
+				480DE405189CCA3F00B911CE /* MCParseConstants.m */,
+				480DE3B1189C86BC00B911CE /* MCRandomPassword.h */,
+				480DE3B2189C86BC00B911CE /* MCRandomPassword.m */,
+				48701BA718979D6C003C4DA2 /* MCRawControl.h */,
+				48701BA818979D6C003C4DA2 /* MCRawControl.m */,
+				48701BA918979D6C003C4DA2 /* MCRawControlValidator.h */,
+				48701BAA18979D6C003C4DA2 /* MCRawControlValidator.m */,
+				48097728189A3213003D26D3 /* MCSubmissionAction.h */,
+				48097729189A3213003D26D3 /* MCSubmissionAction.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4874AF651899B85100B860C1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4874AF691899DDE900B860C1 /* MCCompletedViewController.h */,
+				4874AF6A1899DDE900B860C1 /* MCCompletedViewController.m */,
+				48D4B3D71898908C0040F469 /* MCDependencyViewController.h */,
+				48D4B3D81898908C0040F469 /* MCDependencyViewController.m */,
+				48AE723218987D18009A7F4F /* MCDescriptionViewController.h */,
+				48AE723318987D18009A7F4F /* MCDescriptionViewController.m */,
+				480DE407189CCF3900B911CE /* MCDevelopersViewController.h */,
+				480DE408189CCF3900B911CE /* MCDevelopersViewController.m */,
+				480DE3AE189C82CA00B911CE /* MCMacCitiKeyViewController.h */,
+				480DE3AF189C82CA00B911CE /* MCMacCitiKeyViewController.m */,
+				4874AF661899D74B00B860C1 /* MCOptionsViewController.h */,
+				4874AF671899D74B00B860C1 /* MCOptionsViewController.m */,
+				48D4B3DA189894590040F469 /* MCSaveViewController.h */,
+				48D4B3DB189894590040F469 /* MCSaveViewController.m */,
+				4827A456189B751D0034D630 /* MCScreenshotPreviewViewController.h */,
+				4827A457189B751D0034D630 /* MCScreenshotPreviewViewController.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		4884DB6A189F7D96007BE7EB /* BZGFormField */ = {
+			isa = PBXGroup;
+			children = (
+				4884DB6B189F7D96007BE7EB /* BZGFormField.h */,
+				4884DB6C189F7D96007BE7EB /* BZGFormField.m */,
+			);
+			path = BZGFormField;
+			sourceTree = "<group>";
+		};
+		4884DB7118A05A3E007BE7EB /* CTCheckbox */ = {
+			isa = PBXGroup;
+			children = (
+				4884DB7218A05A3E007BE7EB /* CTCheckbox.h */,
+				4884DB7318A05A3E007BE7EB /* CTCheckbox.m */,
+			);
+			path = CTCheckbox;
+			sourceTree = "<group>";
+		};
+		48AE722D189873EC009A7F4F /* Fetched Results Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48701BB218985E1E003C4DA2 /* MCFetchedResultsController.h */,
+				48701BB318985E1E003C4DA2 /* MCFetchedResultsController.m */,
+			);
+			name = "Fetched Results Controller";
+			sourceTree = "<group>";
+		};
+		48AE722E1898741C009A7F4F /* Swipe Cell Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48701BB518986696003C4DA2 /* MCSwipeCellViewController.h */,
+				48701BB618986696003C4DA2 /* MCSwipeCellViewController.m */,
+			);
+			name = "Swipe Cell Controller";
+			sourceTree = "<group>";
+		};
+		48AE722F18987427009A7F4F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4874AF651899B85100B860C1 /* Shared */,
+				48AE723118987CF2009A7F4F /* Submission */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		48AE723018987480009A7F4F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				48701BA418979D32003C4DA2 /* MCSubmissionCell.h */,
+				48701BA518979D32003C4DA2 /* MCSubmissionCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		48AE723118987CF2009A7F4F /* Submission */ = {
+			isa = PBXGroup;
+			children = (
+				48FE73D518978F7200639BDC /* MCFreeSubmissionViewController.h */,
+				48FE73D618978F7200639BDC /* MCFreeSubmissionViewController.m */,
+				48FE73D818978F8600639BDC /* MCPaidSubmissionViewController.h */,
+				48FE73D918978F8600639BDC /* MCPaidSubmissionViewController.m */,
+				48FE73DB18978F9700639BDC /* MCUpdateSubmissionViewController.h */,
+				48FE73DC18978F9700639BDC /* MCUpdateSubmissionViewController.m */,
+			);
+			name = Submission;
+			sourceTree = "<group>";
+		};
+		48FE738F18978DFE00639BDC = {
+			isa = PBXGroup;
+			children = (
+				48FE73A118978DFE00639BDC /* mcPKG */,
+				48FE73BA18978DFE00639BDC /* mcPKGTests */,
+				48FE739A18978DFE00639BDC /* Frameworks */,
+				48FE739918978DFE00639BDC /* Products */,
+				1CB7B7637E5E4401A2FF40D7 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		48FE739918978DFE00639BDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48FE739818978DFE00639BDC /* mcPKG.app */,
+				48FE73B318978DFE00639BDC /* mcPKGTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48FE739A18978DFE00639BDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CA3CBF9199A6B4200DAB812 /* FacebookSDK.framework */,
+				1CA3CBF7199A6AC100DAB812 /* Parse.framework */,
+				480DE410189CE49E00B911CE /* MessageUI.framework */,
+				480DE402189CADFB00B911CE /* StoreKit.framework */,
+				480DE400189CADCB00B911CE /* CoreLocation.framework */,
+				480DE3FE189CADA800B911CE /* FacebookSDK.framework */,
+				480DE3F9189CAB4800B911CE /* libsqlite3.0.dylib */,
+				480DE3F7189CAB3600B911CE /* libz.1.1.3.dylib */,
+				480DE3F5189CAAF800B911CE /* Social.framework */,
+				480DE3F3189CAABD00B911CE /* Accounts.framework */,
+				480DE3F1189CAAAD00B911CE /* AudioToolbox.framework */,
+				485A3C2A189B885D002E1B43 /* libz.dylib */,
+				48FE739B18978DFE00639BDC /* Foundation.framework */,
+				48FE739D18978DFE00639BDC /* CoreGraphics.framework */,
+				48FE739F18978DFE00639BDC /* UIKit.framework */,
+				48FE73B418978DFE00639BDC /* XCTest.framework */,
+				B6DE555072A5409BA11D02F9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48FE73A118978DFE00639BDC /* mcPKG */ = {
+			isa = PBXGroup;
+			children = (
+				48701BB11897A071003C4DA2 /* API */,
+				48701BA318979CC3003C4DA2 /* Core Data */,
+				4874AF641899B7E700B860C1 /* Model */,
+				48FE73A218978DFE00639BDC /* Supporting Files */,
+				48FE73DE189793D600639BDC /* View Controllers */,
+			);
+			path = mcPKG;
+			sourceTree = "<group>";
+		};
+		48FE73A218978DFE00639BDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48701BAD18979FCA003C4DA2 /* App Delegate */,
+				4884DB6A189F7D96007BE7EB /* BZGFormField */,
+				4884DB7118A05A3E007BE7EB /* CTCheckbox */,
+				48FE73CA18978E3300639BDC /* RMMultipleViewsController */,
+				485A3C18189B8833002E1B43 /* SSZipArchive */,
+				48FE73AD18978DFE00639BDC /* Images.xcassets */,
+				48FE73A318978DFE00639BDC /* mcPKG-Info.plist */,
+				48FE73A418978DFE00639BDC /* InfoPlist.strings */,
+				48FE73A718978DFE00639BDC /* main.m */,
+				48FE73A918978DFE00639BDC /* mcPKG-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48FE73BA18978DFE00639BDC /* mcPKGTests */ = {
+			isa = PBXGroup;
+			children = (
+				48FE73C018978DFE00639BDC /* mcPKGTests.m */,
+				48FE73BB18978DFE00639BDC /* Supporting Files */,
+			);
+			path = mcPKGTests;
+			sourceTree = "<group>";
+		};
+		48FE73BB18978DFE00639BDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48FE73BC18978DFE00639BDC /* mcPKGTests-Info.plist */,
+				48FE73BD18978DFE00639BDC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48FE73CA18978E3300639BDC /* RMMultipleViewsController */ = {
+			isa = PBXGroup;
+			children = (
+				48FE73CB18978E3300639BDC /* RMMultipleViewsController.h */,
+				48FE73CC18978E3300639BDC /* RMMultipleViewsController.m */,
+				48FE73CD18978E3300639BDC /* RMMultipleViewsController.xcassets */,
+			);
+			path = RMMultipleViewsController;
+			sourceTree = "<group>";
+		};
+		48FE73DE189793D600639BDC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				48FE73D018978E6A00639BDC /* iPhone568.storyboard */,
+				48AE723018987480009A7F4F /* Cells */,
+				48AE722F18987427009A7F4F /* Controllers */,
+				48AE722D189873EC009A7F4F /* Fetched Results Controller */,
+				48FE73DF189795EC00639BDC /* Segmented Controller */,
+				48AE722E1898741C009A7F4F /* Swipe Cell Controller */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		48FE73DF189795EC00639BDC /* Segmented Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48FE73D218978EED00639BDC /* MCSegmentedViewController.h */,
+				48FE73D318978EED00639BDC /* MCSegmentedViewController.m */,
+			);
+			name = "Segmented Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48FE739718978DFE00639BDC /* mcPKG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48FE73C418978DFE00639BDC /* Build configuration list for PBXNativeTarget "mcPKG" */;
+			buildPhases = (
+				3C2822A523734139A5B7B195 /* Check Pods Manifest.lock */,
+				48FE739418978DFE00639BDC /* Sources */,
+				48FE739518978DFE00639BDC /* Frameworks */,
+				48FE739618978DFE00639BDC /* Resources */,
+				C61A3054F44043E4894E35F3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mcPKG;
+			productName = mcPKG;
+			productReference = 48FE739818978DFE00639BDC /* mcPKG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48FE73B218978DFE00639BDC /* mcPKGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48FE73C718978DFE00639BDC /* Build configuration list for PBXNativeTarget "mcPKGTests" */;
+			buildPhases = (
+				48FE73AF18978DFE00639BDC /* Sources */,
+				48FE73B018978DFE00639BDC /* Frameworks */,
+				48FE73B118978DFE00639BDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48FE73B918978DFE00639BDC /* PBXTargetDependency */,
+			);
+			name = mcPKGTests;
+			productName = mcPKGTests;
+			productReference = 48FE73B318978DFE00639BDC /* mcPKGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48FE739018978DFE00639BDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Mac*Citi, LLC";
+				TargetAttributes = {
+					48FE739718978DFE00639BDC = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					48FE73B218978DFE00639BDC = {
+						TestTargetID = 48FE739718978DFE00639BDC;
+					};
+				};
+			};
+			buildConfigurationList = 48FE739318978DFE00639BDC /* Build configuration list for PBXProject "mcPKG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48FE738F18978DFE00639BDC;
+			productRefGroup = 48FE739918978DFE00639BDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48FE739718978DFE00639BDC /* mcPKG */,
+				48FE73B218978DFE00639BDC /* mcPKGTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48FE739618978DFE00639BDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48FE73CF18978E3300639BDC /* RMMultipleViewsController.xcassets in Resources */,
+				48FE73D118978E6A00639BDC /* iPhone568.storyboard in Resources */,
+				48FE73A618978DFE00639BDC /* InfoPlist.strings in Resources */,
+				48FE73AE18978DFE00639BDC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48FE73B118978DFE00639BDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48FE73BF18978DFE00639BDC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C2822A523734139A5B7B195 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C61A3054F44043E4894E35F3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48FE739418978DFE00639BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48FE73D718978F7200639BDC /* MCFreeSubmissionViewController.m in Sources */,
+				480DE409189CCF3900B911CE /* MCDevelopersViewController.m in Sources */,
+				48FE73DD18978F9700639BDC /* MCUpdateSubmissionViewController.m in Sources */,
+				480DE40F189CD43600B911CE /* MCDeveloper+Create.m in Sources */,
+				485A3C27189B8833002E1B43 /* unzip.c in Sources */,
+				485A3C28189B8833002E1B43 /* zip.c in Sources */,
+				48701B9E18979CBC003C4DA2 /* MCPackageID.m in Sources */,
+				4884DB66189F5854007BE7EB /* MCUsage.m in Sources */,
+				48701BB418985E1E003C4DA2 /* MCFetchedResultsController.m in Sources */,
+				4874AF681899D74B00B860C1 /* MCOptionsViewController.m in Sources */,
+				48AE723418987D18009A7F4F /* MCDescriptionViewController.m in Sources */,
+				48D4B3DF189896630040F469 /* MCControlFileGenerator.m in Sources */,
+				480DE3B0189C82CA00B911CE /* MCMacCitiKeyViewController.m in Sources */,
+				48701BAB18979D6C003C4DA2 /* MCRawControl.m in Sources */,
+				48701BA018979CBC003C4DA2 /* mcPKG.xcdatamodeld in Sources */,
+				4827A458189B751D0034D630 /* MCScreenshotPreviewViewController.m in Sources */,
+				48701BAC18979D6C003C4DA2 /* MCRawControlValidator.m in Sources */,
+				4874AF6B1899DDE900B860C1 /* MCCompletedViewController.m in Sources */,
+				48701BA618979D32003C4DA2 /* MCSubmissionCell.m in Sources */,
+				48D4B3DC189894590040F469 /* MCSaveViewController.m in Sources */,
+				4884DB7418A05A3E007BE7EB /* CTCheckbox.m in Sources */,
+				4809772A189A3213003D26D3 /* MCSubmissionAction.m in Sources */,
+				485A3C25189B8833002E1B43 /* ioapi.c in Sources */,
+				48D4B3D91898908C0040F469 /* MCDependencyViewController.m in Sources */,
+				48FE73CE18978E3300639BDC /* RMMultipleViewsController.m in Sources */,
+				485A3C29189B8833002E1B43 /* SSZipArchive.m in Sources */,
+				485A3C26189B8833002E1B43 /* mztools.c in Sources */,
+				48701BA118979CBC003C4DA2 /* MCSubmission.m in Sources */,
+				48FE73D418978EED00639BDC /* MCSegmentedViewController.m in Sources */,
+				48701B9F18979CBC003C4DA2 /* MCPackageID+Create.m in Sources */,
+				48701BA218979CBC003C4DA2 /* MCSubmission+Create.m in Sources */,
+				48FE73AC18978DFE00639BDC /* MCAppDelegate.m in Sources */,
+				48701BB01897A06C003C4DA2 /* MCWebAPi.m in Sources */,
+				480DE406189CCA3F00B911CE /* MCParseConstants.m in Sources */,
+				480DE3B3189C86BC00B911CE /* MCRandomPassword.m in Sources */,
+				48701BB718986696003C4DA2 /* MCSwipeCellViewController.m in Sources */,
+				4884DB6D189F7D96007BE7EB /* BZGFormField.m in Sources */,
+				48FE73DA18978F8600639BDC /* MCPaidSubmissionViewController.m in Sources */,
+				4884DB69189F58C8007BE7EB /* MCUsage+Create.m in Sources */,
+				4884DB70189F80C0007BE7EB /* MCDeveloper.m in Sources */,
+				48FE73A818978DFE00639BDC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48FE73AF18978DFE00639BDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48FE73C118978DFE00639BDC /* mcPKGTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48FE73B918978DFE00639BDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48FE739718978DFE00639BDC /* mcPKG */;
+			targetProxy = 48FE73B818978DFE00639BDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48FE73A418978DFE00639BDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48FE73A518978DFE00639BDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		48FE73BD18978DFE00639BDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48FE73BE18978DFE00639BDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48FE73C218978DFE00639BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		48FE73C318978DFE00639BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48FE73C518978DFE00639BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB7B7637E5E4401A2FF40D7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mcPKG/mcPKG-Prefix.pch";
+				INFOPLIST_FILE = "mcPKG/mcPKG-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		48FE73C618978DFE00639BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB7B7637E5E4401A2FF40D7 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mcPKG/mcPKG-Prefix.pch";
+				INFOPLIST_FILE = "mcPKG/mcPKG-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		48FE73C818978DFE00639BDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mcPKG.app/mcPKG";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mcPKG/mcPKG-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "mcPKGTests/mcPKGTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		48FE73C918978DFE00639BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mcPKG.app/mcPKG";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mcPKG/mcPKG-Prefix.pch";
+				INFOPLIST_FILE = "mcPKGTests/mcPKGTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48FE739318978DFE00639BDC /* Build configuration list for PBXProject "mcPKG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48FE73C218978DFE00639BDC /* Debug */,
+				48FE73C318978DFE00639BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48FE73C418978DFE00639BDC /* Build configuration list for PBXNativeTarget "mcPKG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48FE73C518978DFE00639BDC /* Debug */,
+				48FE73C618978DFE00639BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48FE73C718978DFE00639BDC /* Build configuration list for PBXNativeTarget "mcPKGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48FE73C818978DFE00639BDC /* Debug */,
+				48FE73C918978DFE00639BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		48701B9818979CBC003C4DA2 /* mcPKG.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				48701B9918979CBC003C4DA2 /* mcPKG.xcdatamodel */,
+			);
+			currentVersion = 48701B9918979CBC003C4DA2 /* mcPKG.xcdatamodel */;
+			path = mcPKG.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 48FE739018978DFE00639BDC /* Project object */;
+}
